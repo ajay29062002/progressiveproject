@@ -7,61 +7,126 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
  
-@Entity
+//@Entity
 public class Transactions {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer transaction_id;
-    private Integer account_id;
-    private Double amount;
-    private Date transaction_date;
-    private String transaction_type;
+
+
+    private int transactionId;
+    private int accountId;
+    private double amount;
+    private Date transactionDate;
+    private String transactionType;
  
+ public int getTransactionId() {
+        return transactionId;
+    }
+
+
+    public void setTransactionId(int transactionId) {
+        this.transactionId = transactionId;
+    }
+
+
+    public int getAccountId() {
+        return accountId;
+    }
+
+
+    public void setAccountId(int accountId) {
+        this.accountId = accountId;
+    }
+
+
+    public double getAmount() {
+        return amount;
+    }
+
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+
+    public Date getTransactionDate() {
+        return transactionDate;
+    }
+
+
+    public void setTransactionDate(Date transactionDate) {
+        this.transactionDate = transactionDate;
+    }
+
+
+    public String getTransactionType() {
+        return transactionType;
+    }
+
+
+    public void setTransactionType(String transactionType) {
+        this.transactionType = transactionType;
+    }
+
+
+    //   @Id
+  //  @GeneratedValue(strategy = GenerationType.IDENTITY)
+   
    
    public Transactions()
    {
  
    }
- 
-public Integer getTransaction_id() {
-    return transaction_id;
-}
- 
-public void setTransaction_id(Integer transaction_id) {
-    this.transaction_id = transaction_id;
-}
- 
-public Integer getAccount_id() {
-    return account_id;
-}
- 
-public void setAccount_id(Integer account_id) {
-    this.account_id = account_id;
-}
- 
-public Double getAmount() {
-    return amount;
-}
- 
-public void setAmount(Double amount) {
+
+
+public Transactions(int transactionId, int accountId, double amount, Date transactionDate, String transactionType) {
+    this.transactionId = transactionId;
+    this.accountId = accountId;
     this.amount = amount;
+    this.transactionDate = transactionDate;
+    this.transactionType = transactionType;
 }
+
+   
+
  
-public Date getTransaction_date() {
-    return transaction_date;
-}
+// public int getTransaction_id() {
+//     return transactionId;
+// }
  
-public void setTransaction_date(Date transaction_date) {
-    this.transaction_date = transaction_date;
-}
+// public void setTransaction_id(int transactionId) {
+//     this.transactionId = transactionId;
+// }
  
-public String getTransaction_type() {
-    return transaction_type;
-}
+// public int getAccount_id() {
+//     return accountId;
+// }
  
-public void setTransaction_type(String transaction_type) {
-    this.transaction_type = transaction_type;
-}
+// public void setAccount_id(int account_id) {
+//     this.accountId = account_id;
+// }
+ 
+// public Double getAmount() {
+//     return amount;
+// }
+ 
+// public void setAmount(Double amount) {
+//     this.amount = amount;
+// }
+ 
+// public Date getTransaction_date() {
+//     return transactionDate;
+// }
+ 
+// public void setTransaction_date(Date transaction_date) {
+//     this.transactionDate = transaction_date;
+// }
+ 
+// public String getTransaction_type() {
+//     return transactionType;
+// }
+ 
+// public void setTransaction_type(String transaction_type) {
+//     this.transaction_type = transaction_type;
+// }
  
  
 }
