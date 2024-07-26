@@ -11,6 +11,6 @@ import { of } from 'rxjs';
   styleUrls:[ './customersample.component.css']
 })
 export class CustomersampleComponent {
-customer :any= new CustomerTS("2","ajay","a@g.com","aj","a12","IT")
+customers :CustomerTS= new CustomerTS("2","ajay","a@g.com","aj","a12","IT")
 }
 
