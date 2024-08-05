@@ -1,10 +1,11 @@
-
-    <div *ngFor="let a of customers">
-       <p>{{a.customerId}}</p>
-        <p>{{a.name}}</p>
-        <p>{{a.email}}</p>
-        <p>{{a.username}}</p>
-        <p>{{a.password}}</p>
-        <p>{{a.role}}</p>
-
-</div>
+<div *ngFor="let customer of customers">
+    <p>
+      {{ customer.customerId }}
+      {{ customer.name }}
+      {{ customer.email }}
+      {{customer.password}}
+      {{customer.username}}
+      {{customer.role}}
+     
+    </p>
+  </div>
